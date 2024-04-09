@@ -28,4 +28,4 @@ public class GroceryItem {
 		this.brand = brand;
 	}
 	
-} // 
+} // end class
