@@ -3,7 +3,7 @@ package groceryList;
 
 /**
  * Class Grocery Item
- * @author dylan
+ * @author Dylan B, Dylan P, Ruman K
  */
 public class GroceryItem {
 	String name;
@@ -27,6 +27,11 @@ public class GroceryItem {
 	}
 	public void setBrand(String brand) {
 		this.brand = brand;
+	}
+	
+	@Override
+	public String toString() {
+		return String.format(" Item name: %s || Brand: %s", name, brand);
 	}
 	
 } // end class
