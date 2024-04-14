@@ -10,7 +10,8 @@ public class GroceryApp {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		GroceryItem item1 = new GroceryItem("banana", "dole");
+		FreshItem item1 = new FreshItem("apple", "dole", "honey crisp", true, "red");
+//		item1.setOrganic(false);
 		System.out.println(item1.toString());
 
 	} // end main
