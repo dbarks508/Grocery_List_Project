@@ -31,7 +31,7 @@ public class GroceryItem {
 	
 	@Override
 	public String toString() {
-		return String.format(" Item name: %s || Brand: %s", name, brand);
+		return String.format(" Name: %s || Brand: %s", name, brand);
 	}
 	
 } // end class
