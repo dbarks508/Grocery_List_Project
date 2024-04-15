@@ -22,16 +22,19 @@ public class GroceryApp {
 		GroceryItem[] items = {food1, food3, food2};
 		List<GroceryItem> groceryItems = new ArrayList<>(Arrays.asList(items));
 		
-//		Vegetable v = null;
-		for (GroceryItem g : groceryItems) {
-			System.out.println(g.toString());
-			if(g instanceof Vegetable) {
-				Vegetable v = (Vegetable) g;
-				if(v.isFrozen()) v.setFrozen(false); 
-			}
-		}
+		GroceryList gl = new GroceryList(groceryItems);
+		System.out.println("Items: "+ gl.getNumberOfItems() + " || Veggies: " + gl.getNumberOfVegetables());
 		
-		System.out.println("\nNEW food3: \n" + food3.toString());
+//		Vegetable v = null;
+//		for (GroceryItem g : groceryItems) {
+//			System.out.println(g.toString());
+//			if(g instanceof Vegetable) {
+//				Vegetable v = (Vegetable) g;
+//				if(v.isFrozen()) v.setFrozen(false); 
+//			}
+//		}
+//		
+//		System.out.println("\nNEW food3: \n" + food3.toString());
 		
 		
 		
