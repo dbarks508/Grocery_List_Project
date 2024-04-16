@@ -22,8 +22,13 @@ public class GroceryApp {
 		GroceryItem[] items = {food1, food3, food2};
 		List<GroceryItem> groceryItems = new ArrayList<>(Arrays.asList(items));
 		
-		GroceryList gl = new GroceryList(groceryItems);
+		GroceryList gl = new GroceryList(groceryItems, "Prices.csv");
 		System.out.println("Items: "+ gl.getNumberOfItems() + " || Veggies: " + gl.getNumberOfVegetables());
+		
+		List<Price> prices = gl.generatePriceList();
+		for (Price p: prices) {
+			System.out.println(p.toString());
+		}
 		
 //		Vegetable v = null;
 //		for (GroceryItem g : groceryItems) {
