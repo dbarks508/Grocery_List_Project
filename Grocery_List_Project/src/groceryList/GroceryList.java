@@ -1,5 +1,6 @@
 package groceryList;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -51,8 +52,21 @@ public class GroceryList {
 		return prices;
 	} // end method
 	
-	public double estimatePrice() {
-		return 0.0;
-	}
+	public String estimatePrice() {
+		List<Price> prices = this.generatePriceList();
+		double total = 0;
+		
+		for(int i = 0; i < prices.size(); i++) {
+			Price price = prices.get(i); 
+			for (GroceryItem g: groceryList) {
+				if (g.name.equals(price.name)) {
+					total += price.price;
+				}
+			} // end inner
+		} // end outer
+		DecimalFormat df = new DecimalFormat("#.##");
+		String roundedTotal = df.format(total);
+		return "$" + roundedTotal;
+	} // end method
 	
 } // end class
