@@ -1,5 +1,7 @@
 package groceryList;
 
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
@@ -67,6 +69,17 @@ public class GroceryList {
 		DecimalFormat df = new DecimalFormat("#.##");
 		String roundedTotal = df.format(total);
 		return "$" + roundedTotal;
+	} // end method
+	
+	public static void writeToFile() {
+		String filePath = "src/groceryList/GroceryList";
+		
+		try(PrintWriter writer = new PrintWriter(filePath)){
+			// TODO
+		} catch (FileNotFoundException e) {
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+		}
 	} // end method
 	
 } // end class
