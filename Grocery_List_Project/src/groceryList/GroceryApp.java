@@ -25,6 +25,8 @@ public class GroceryApp {
 		List<GroceryItem> groceryItems = new ArrayList<>(Arrays.asList(items));
 		GroceryList gl = new GroceryList(groceryItems, "Prices.csv");
 		System.out.println("Estimated price: " + gl.estimatePrice());
+		
+		gl.writeToFile(groceryItems);
 
 //		List<Price> prices = gl.generatePriceList();
 //		for (Price p: prices) {

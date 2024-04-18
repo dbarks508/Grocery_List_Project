@@ -74,15 +74,19 @@ public class GroceryList {
 	} // end method
 
 	
-	public static void writeToFile() {
-		String filePath = "src/groceryList/GroceryList";
+	public void writeToFile(List<GroceryItem> groceryList) {
+		String filePath = "src/groceryList/List";
 		
 		try(PrintWriter writer = new PrintWriter(filePath)){
-			// TODO
+			for(GroceryItem g: groceryList) {
+				writer.printf("%s", g.toString());
+				writer.println();
+			}
 		} catch (FileNotFoundException e) {
 			System.out.println(e.getMessage());
 			e.printStackTrace();
 		}
+		System.out.println("Printed grocery list to List file");
 	} // end method
 	
 } // end class
