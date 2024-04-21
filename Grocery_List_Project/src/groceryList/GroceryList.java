@@ -1,5 +1,6 @@
 package groceryList;
 
+
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.text.DecimalFormat;
@@ -96,6 +97,7 @@ public class GroceryList {
 		String roundedTotal = df.format(total);
 		return "$" + roundedTotal;
 	} // end method
+
 	
 	/**
 	 * Method writes groceryList to List.txt file
