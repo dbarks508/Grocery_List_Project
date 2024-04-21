@@ -1,5 +1,5 @@
 package groceryList;
 
 public enum Size {
-	SNACK, REGULAR, FAMILY;
+	SNACK, REGULAR, FAMILY, ANY;
 }

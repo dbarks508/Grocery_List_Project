@@ -87,6 +87,8 @@ public class GroceryList {
 			for (GroceryItem g: groceryList) {
 				if (g.name.equals(price.name)) {
 					total += price.price;
+				} else {
+					total += 0.0;
 				}
 			} // end inner
 		} // end outer
