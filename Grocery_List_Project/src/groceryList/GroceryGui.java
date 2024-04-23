@@ -21,6 +21,10 @@ import java.awt.event.ActionEvent;
 import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 
+/**
+ * GUI for Grocery App 
+ * @author Dylan P
+ */
 public class GroceryGui extends JFrame {
 
 	private static final long serialVersionUID = 1L;
@@ -71,6 +75,10 @@ public class GroceryGui extends JFrame {
 
 	} // end constructor
 
+	/**
+	 * constructs main panel for app
+	 * @return panel
+	 */
 	private JPanel newListPanel() {
 		JPanel panel = new JPanel();
 
@@ -158,9 +166,7 @@ public class GroceryGui extends JFrame {
 				} else {
 					brand = itemBrandField.getText();
 				}
-				
-
-				
+			
 				// SnackItem or FreshItem
 				if(snackItemBox.isSelected() && !freshItemBox.isSelected()) {
 					// set size
@@ -229,6 +235,7 @@ public class GroceryGui extends JFrame {
 		btnNewButton.setBounds(8, 215, 115, 19);
 		panel.add(btnNewButton);
 		
+		// print list button
 		JButton printListButton = new JButton("Print List");
 		printListButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -240,6 +247,7 @@ public class GroceryGui extends JFrame {
 		printListButton.setBounds(219, 215, 96, 19);
 		panel.add(printListButton);
 		
+		// estimate price button
 		JButton estimatePriceButton = new JButton("Est. Price");
 		estimatePriceButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -257,10 +265,17 @@ public class GroceryGui extends JFrame {
 		return panel;
 	} //end jPanel
 	
+	/**
+	 * returns a grocery list object
+	 * @return GroceryList
+	 */
 	private static GroceryList makeGroceryListObject() {
 		return new GroceryList(groceryList, "Prices.csv");
 	}
 
+	/**
+	 * adds title
+	 */
 	private void createTitle() {
 		JLabel lblNewLabel = new JLabel("Grocery List App");
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
