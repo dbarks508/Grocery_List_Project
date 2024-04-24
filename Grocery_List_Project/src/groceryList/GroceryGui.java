@@ -23,7 +23,7 @@ import javax.swing.JComboBox;
 
 /**
  * GUI for Grocery App 
- * @author Dylan P
+ * @author Dylan P, Dylan B
  */
 public class GroceryGui extends JFrame {
 

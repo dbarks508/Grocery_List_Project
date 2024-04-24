@@ -2,6 +2,7 @@ package groceryList;
 
 /**
  * Class freshItem extends GroceryItem
+ * @author Dylan B
  */
 public class FreshItem extends GroceryItem{
 	String variety;

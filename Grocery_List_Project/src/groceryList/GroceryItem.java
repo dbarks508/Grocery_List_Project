@@ -3,7 +3,7 @@ package groceryList;
 
 /**
  * Class Grocery Item
- * @author Dylan B, Dylan P, Ruman K
+ * @author Dylan B, Dylan P, Ruman 
  */
 public class GroceryItem {
 	String name;

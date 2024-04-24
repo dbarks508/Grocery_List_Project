@@ -2,6 +2,7 @@ package groceryList;
 
 /**
  * Class has item name and corresponding price parameter 
+ * @author Ruman
  */
 public class Price {
 	String name;
