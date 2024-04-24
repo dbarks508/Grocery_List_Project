@@ -1,5 +1,8 @@
 package groceryList;
 
+/**
+ * Class has item name and corresponding price parameter 
+ */
 public class Price {
 	String name;
 	double price;
@@ -24,6 +27,9 @@ public class Price {
 		this.price = price;
 	}
 	
+	/**
+	 * @return String comprised of name and price
+	 */
 	public String toString() {
 		return this.name + "   " + this.price;
 	}

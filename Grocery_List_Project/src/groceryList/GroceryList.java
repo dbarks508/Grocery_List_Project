@@ -11,6 +11,7 @@ import java.util.Scanner;
 /**
  * Class GroceryList provides functionality for a grocery list. Methods include
  * estimating the cost of the list, and writing the list to a file. 
+ * @author Ruman, Dylan B
  */
 public class GroceryList {
 	List<GroceryItem> groceryList;
