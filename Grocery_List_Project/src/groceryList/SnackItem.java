@@ -2,6 +2,7 @@ package groceryList;
 
 /**
  * class SnackITem extends GroceryItem
+ * @author dylan B
  */
 public class SnackItem extends GroceryItem{
 	Size size;
